@@ -2,10 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns
 
-# Đọc file dữ liệu bạn vừa sinh ra
+# Đọc file dữ liệu 
 df = pd.read_csv('duisport_terminal_input.csv')
 
-# Cài đặt giao diện biểu đồ cho đẹp mắt, chuyên nghiệp
+# Cài đặt giao diện 
 sns.set_theme(style="whitegrid")
 fig, axes = plt.subplots(2, 2, figsize=(14, 10))
 fig.suptitle('Duisport Terminal Simulation Dataset - Exploratory Data Analysis', fontsize=16, fontweight='bold', y=0.95)

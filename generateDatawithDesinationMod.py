@@ -15,7 +15,6 @@ delay_times = []
 tonnes_list = []
 destination_modes = []
 
-# Các phương thức xuất đi có thể random (vd: tỷ lệ phân phối xuất đi tuỳ chọn)
 dest_choices = ['Truck', 'Barge', 'Rail']
 
 for mode in modes:
@@ -68,6 +67,6 @@ df_duisport_sim = pd.DataFrame({
     'Delay_Time_Min': delay_times
 })
 
-# Export to CSV for Plant Simulation and Python analytics
+# Export to CSV 
 df_duisport_sim.to_csv('duisport_terminal_input_destinationMode.csv', index=False)
 print("Successfully generated simulation dataset with Destination_Mode!")

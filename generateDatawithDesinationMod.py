@@ -19,7 +19,7 @@ dest_choices = ['Truck', 'Barge', 'Rail']
 
 for mode in modes:
     # Random phương thức tiếp theo (destination mode), có thể khác hoặc giống mode đến
-    dest_mode = np.random.choice(dest_choices, p=[0.4, 0.4, 0.2]) # Bạn có thể đổi xác suất tuỳ ý
+    dest_mode = np.random.choice(dest_choices, p=[0.4, 0.4, 0.2]) 
     destination_modes.append(dest_mode)
 
     if mode == 'Truck':
